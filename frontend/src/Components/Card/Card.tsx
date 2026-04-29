@@ -3,11 +3,10 @@ import React from 'react'
 interface Props  {
   companyName: string;
   ticker: string;
-  price:number;
-
+  price: number;
 }
 
-const Card = ({companyName,ticker,price}: Props) => {
+const Card: React.FC<Props> = ({ companyName, ticker, price }) => {
   return (
     <div className="card">
       <img
@@ -15,8 +14,8 @@ const Card = ({companyName,ticker,price}: Props) => {
         alt="Imagem do card"
       />
       <div className="details">
-        <h2>{companyName}{ticker}</h2>
-        <p>{price}</p>
+        <h2>{companyName} {ticker}</h2>
+        <p>${price}</p>
       </div>
       <p className="info">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, molestias!
