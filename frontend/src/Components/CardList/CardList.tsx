@@ -1,16 +1,27 @@
-import React from 'react'
-import Card from '../Card/Card'
+import Card from "../Card/Card";
+import { CompanySearch } from "../../company";
 
-interface Props {}
-
-const CardList: React.FC<Props> = (props: Props) => {
-  return (
-    <div>
-      <Card companyName="Apple" ticker="AAPL" price={100} />
-      <Card companyName="Microsoftp" ticker="MSFT" price={200} />
-      <Card companyName="Tesla" ticker="TSLA" price={300} />
-    </div>
-  )
+interface Props {
+  companies: CompanySearch[];
 }
 
-export default CardList
+const CardList: React.FC<Props> = ({ companies }) => {
+  return (
+    <div>
+      {companies.length > 0 ? (
+        companies.map((company) => (
+          <Card
+            key={company.symbol}
+            companyName={company.name}
+            ticker={company.symbol}
+            price={0}
+          />
+        ))
+      ) : (
+        <h2>Nenhum resultado</h2>
+      )}
+    </div>
+  );
+};
+
+export default CardList;
