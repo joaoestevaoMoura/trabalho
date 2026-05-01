@@ -14,14 +14,15 @@ const CardList: React.FC<Props> = ({ companies, onPortifolioCreate }) => {
         companies.map((company) => (
           <Card
             key={company.symbol}
-            companyName={company.name}
-            ticker={company.symbol}
-            price={0}
+            id={company.symbol}
+            searchResult={company}
             onPortifolioCreate={onPortifolioCreate}
           />
         ))
       ) : (
-        <h2>Nenhum resultado</h2>
+        <p className="mb-3 mt-3 text-xl font-semibold text-center md:text-xl">
+          No results!
+        </p>
       )}
     </div>
   );

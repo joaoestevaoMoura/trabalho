@@ -5,6 +5,7 @@ import ListPortifolio from "./Components/Portifolio/ListPortifolio/ListPortifoli
 import { ChangeEvent, SyntheticEvent, useState } from "react";
 import { searchCompanies } from "./api";
 import { CompanySearch } from "./company";
+import Navbar from "./Components/Navbar/Navbar";
 
 function App() {
   const [search, setSearch] = useState("");
@@ -45,7 +46,9 @@ function App() {
 
   return (
     <div className="App">
-      <Search onClick={onClick} search={search} handleChange={handleChange} />
+      <Navbar />
+      
+          <Search onClick={onClick} search={search} handleChange={handleChange} />
 
       <ListPortifolio
         portfolioValues={portfolioValues}
