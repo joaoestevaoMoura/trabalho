@@ -15,17 +15,24 @@ function App() {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
-const onPortifolioCreate = (e: SyntheticEvent) => {
-  e.preventDefault();
-  const form = e.target as HTMLFormElement;
-  const input = form.elements[0] as HTMLInputElement;
-  const symbol = input.value;
 
-  const exists = portfolioValues.find((value) => value === symbol);
-  if (exists) return;
+  const onPortifolioCreate = (e: SyntheticEvent) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const input = form.elements[0] as HTMLInputElement;
+    const symbol = input.value;
+    const exists = portfolioValues.find((value) => value === symbol);
+    if (exists) return;
+    setPortfolioValues([...portfolioValues, symbol]);
+  };
 
-  setPortfolioValues([...portfolioValues, symbol]);
-};
+  const onPortfolioDelete = (e: SyntheticEvent) => {
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    const input = form.elements[0] as HTMLInputElement;
+    const removed = portfolioValues.filter((value) => value !== input.value);
+    setPortfolioValues(removed);
+  };
 
   const onClick = async (e: SyntheticEvent) => {
     e.preventDefault();
@@ -40,7 +47,10 @@ const onPortifolioCreate = (e: SyntheticEvent) => {
     <div className="App">
       <Search onClick={onClick} search={search} handleChange={handleChange} />
 
-      <ListPortifolio portfolioValues={portfolioValues} />
+      <ListPortifolio
+        portfolioValues={portfolioValues}
+        onPortfolioDelete={onPortfolioDelete}
+      />
 
       {serverError && <div>Unable to connect to API</div>}
 
