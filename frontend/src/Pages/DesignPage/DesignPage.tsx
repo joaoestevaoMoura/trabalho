@@ -19,7 +19,8 @@ const DesignPage = (props: Props) => {
       <h1>FinShark Design Page</h1>
       <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
       <RatioList config={tableConfig} data={testIncomeStatementData[0]} />
-      <Table />
+        <Table  data={testIncomeStatementData} config={tableConfig}/>
+     
     </>
   )
 }
