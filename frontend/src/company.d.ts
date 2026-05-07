@@ -1,3 +1,5 @@
+import exp from "constants";
+
 export interface CompanySearch {
   currency: string;
   exchangeShortName: string;
@@ -308,4 +310,9 @@ export interface CompanyKeyMetrics {
   capexPerShareTTM: number;
   dividendPerShareTTM: number;
   debtToMarketCapTTM: number;
+}
+
+export interface CompanyCompData{
+  symbol: string;
+  peersList:  string[];
 }
