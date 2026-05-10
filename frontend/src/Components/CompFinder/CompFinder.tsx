@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CompanyCompData } from "../../company";
 import { getCompData } from "../../api";
-import CompFinderItem from "./CompFinderItem/CompFinderItem";
 import { Link } from "react-router-dom";
 
 type Props = {
@@ -9,14 +8,12 @@ type Props = {
 };
 
 const CompFinder = ({ ticker }: Props) => {
-  const [companyData, setCompanyData] =
-    useState<CompanyCompData>();
+  const [companyData, setCompanyData] = useState<CompanyCompData>();
 
   useEffect(() => {
     const getComps = async () => {
       const value = await getCompData(ticker);
-
-      setCompanyData(value?.data[0]);
+      setCompanyData(value?.data);
     };
 
     getComps();

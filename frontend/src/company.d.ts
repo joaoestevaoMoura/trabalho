@@ -1,5 +1,3 @@
-import exp from "constants";
-
 export interface CompanySearch {
   currency: string;
   exchangeShortName: string;
@@ -7,13 +5,13 @@ export interface CompanySearch {
   stockExchange: string;
   symbol: string;
 }
-
 export interface CompanyProfile {
   symbol: string;
   price: number;
   beta: number;
   volAvg: number;
   mktCap: number;
+  marketCap: number;
   lastDiv: number;
   range: string;
   changes: number;
@@ -248,7 +246,6 @@ export interface CompanyCashFlow {
   finalLink: string;
 }
 
-
 export interface CompanyKeyMetrics {
   revenuePerShareTTM: number;
   netIncomePerShareTTM: number;
@@ -312,7 +309,17 @@ export interface CompanyKeyMetrics {
   debtToMarketCapTTM: number;
 }
 
-export interface CompanyCompData{
+export interface CompanyCompData {
   symbol: string;
-  peersList:  string[];
+  peersList: string[];
+}
+
+export interface CompanyTenK {
+  symbol: string;
+  fillingDate: string;
+  acceptedDate: string;
+  cik: string;
+  type: string;
+  link: string;
+  finalLink: string;
 }
