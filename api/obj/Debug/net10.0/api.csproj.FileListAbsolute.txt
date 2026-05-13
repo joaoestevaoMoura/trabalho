@@ -157,3 +157,6 @@ C:\Users\jtzin\OneDrive\Documentos\FinShark\api\obj\Debug\net10.0\refint\api.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\obj\Debug\net10.0\api.pdb
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\obj\Debug\net10.0\api.genruntimeconfig.cache
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\obj\Debug\net10.0\ref\api.dll
+C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
