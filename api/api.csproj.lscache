@@ -57,6 +57,8 @@ TemporaryDependencyNodeTargetIdentifier=net10.0
 [sourceFiles]
 Controllers/StockController.cs
 Data/ApplicationDBContext.cs
+Dtos/Stock/StockDto.cs
+Mappers/StockMappers.cs
 Migrations/
  20260510185127_init.cs
  20260510185127_init.Designer.cs
