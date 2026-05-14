@@ -60,6 +60,7 @@ Data/ApplicationDBContext.cs
 Dtos/Stock/
  CreateStockRequestDto.cs .cs
  StockDto.cs
+ UpdateStockRequestDto.cs
 Mappers/StockMappers.cs
 Migrations/
  20260510185127_init.cs
