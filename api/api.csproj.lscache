@@ -67,6 +67,7 @@ Dtos/Stock/
  CreateStockRequestDto.cs .cs
  StockDto.cs
  UpdateStockRequestDto.cs
+Helpers/QueryObject.cs
 Interfaces/
  ICommentRepository.cs
  IStockRepository.cs
