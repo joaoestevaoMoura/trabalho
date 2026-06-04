@@ -18,7 +18,6 @@ C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\api.pdb
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Azure.Core.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Azure.Identity.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Humanizer.dll
-C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
 C:\Users\jtzin\OneDrive\Documentos\FinShark\api\bin\Debug\net10.0\Microsoft.Build.Framework.dll

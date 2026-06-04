@@ -1,4 +1,4 @@
-using System;
+// StockDto.cs
 using System.Collections.Generic;
 using api.Dtos.Comment;
 
