@@ -2,6 +2,7 @@ using api.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace api.Data
 {
@@ -10,6 +11,13 @@ namespace api.Data
         public ApplicationDBContext(DbContextOptions<ApplicationDBContext> dbContextOptions)
         : base(dbContextOptions)
         {
+        }
+
+        // ADICIONE AQUI
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.ConfigureWarnings(warnings =>
+                warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
 
         public DbSet<Stock> Stocks { get; set; }

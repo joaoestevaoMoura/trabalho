@@ -3,7 +3,7 @@ import { CompanyBalanceSheet } from "../../company";
 import { useOutletContext } from "react-router-dom";
 import RatioList from "../RatioList/RatioList";
 import { getBalanceSheet } from "../../api";
-import Spinner from "../Spinner/Spinner";
+import Spinner from "../Spinners/Spinner";
 
 type Props = {};
 

@@ -1,6 +1,6 @@
 import React, { SyntheticEvent } from "react";
 import { CompanySearch } from "../../company";
-import AddPortifolio from "../Portifolio/AddPortifolio/AddPortifolio";
+import AddPortifolio from "../Portfolio/AddPortifolio/AddPortifolio";
 import { Link } from "react-router-dom";
 
 interface Props {
